@@ -1,72 +1,37 @@
-# Path to your oh-my-zsh installation.
+# Default PATH
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/go/bin"
+
+# Register linux cross compiler
+export PATH="${PATH}:/usr/local/gcc-4.8.1-for-linux64/bin"
+
+# iTerm2
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# ZSH configuration
 export ZSH=/Users/ming/.oh-my-zsh
 
-# ZSH_THEME="bullet-train/bullet-train"
 ZSH_THEME="powerlevel9k/powerlevel9k"
-# ZSH_THEME="agnoster"
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+COMPLETION_WAITING_DOTS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="yyyy-mm-dd"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting)
-
-# User configuration
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/mysql/bin:/usr/local/mysql/bin:/usr/local/opt/python/libexec/bin:/Users/ming/go/bin:/Users/ming/Desktop/Programming/go/bin:/Users/ming/Desktop/Development/proj-go/bin:$PATH"
-
-# PostgreSQL
-export PGDATA="${HOME}/postgres"
-
-export EDITOR="/usr/bin/vim"
 
 source $ZSH/oh-my-zsh.sh
 
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
+# Editor
+export EDITOR="/usr/bin/vim"
 
 # Locale
 export LC_ALL=ko_KR.UTF-8
 export LANG=ko_KR.UTF-8
+
+# SSH
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# Compilation flags
+export ARCHFLAGS="-arch x86_64"
 
 # POWERLEVEL9K 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -158,30 +123,43 @@ BULLETTRAIN_PROMPT_ORDER=(
     cmd_exec_time
 )
 
-# go
-BULLETTRAIN_GO_SHOW="true"
+# Alias
+alias awesome="awesome-hub"
+alias ofb="open https://facebook.com"
+alias ogg="open https://google.com"
+alias ogh="open https:/github.com"
 
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+# Github token
+GITHUB_TOKEN=
 
+# PostgreSQL
+export PGDATA="${HOME}/postgres"
+
+# Pyenv
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
-# autoenv
+# Autoenv
 source /usr/local/opt/autoenv/activate.sh
 
-# rbenv
-export PATH="$HOME/.rbenv/shims:$PATH"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Rbenv
+export PATH="$PATH:$HOME/.rbenv/shims:$HOME/.rvm/bin"
 
 # CUDA
 export CUDA_HOME=/usr/local/cuda
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
 export PATH="$CUDA_HOME/bin:$PATH"
 
-export NVM_DIR="/Users/ming/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
+# FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/sbin:$PATH"
+
+# Localstack
+export DEFAULT_REGION="ap-northeast-2"
+export SERVICES="firehose,s3,es"
+
+# Shiori
+ENV_SHIORI_DB=$HOME/.shiori.db
