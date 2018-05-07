@@ -1,8 +1,8 @@
 # Default PATH
-export PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/go/bin"
+export PATH=/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin
 
 # Register linux cross compiler
-export PATH="${PATH}:/usr/local/gcc-4.8.1-for-linux64/bin"
+export PATH=/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin
 
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -34,7 +34,7 @@ plugins=(git zsh-syntax-highlighting)
 ## ZSH theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-## POWERLEVEL9K 
+## POWERLEVEL9K
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="⎾ "
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="⎿  "
@@ -113,7 +113,7 @@ POWERLEVEL9K_MODE='compatible'
 
 ### Bullet train
 BULLETTRAIN_PROMPT_ORDER=(
-	time
+    time
     status
     custom
     context
@@ -131,6 +131,10 @@ alias awesome="awesome-hub"
 alias ofb="open https://facebook.com"
 alias ogg="open https://google.com"
 alias ogh="open https:/github.com"
+
+# Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Github token
 GITHUB_TOKEN=
