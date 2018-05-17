@@ -40,7 +40,7 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="⎾ "
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="⎿  "
 POWERLEVEL9K_MODE="awesome-patched"
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon docker_machine aws pyenv dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon docker_machine aws virtualenv dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(load ram_joined time)
 
 ### Shorten
