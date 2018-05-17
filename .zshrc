@@ -152,6 +152,9 @@ eval "$(pyenv virtualenv-init -)"
 # Autoenv
 source /usr/local/opt/autoenv/activate.sh
 
+# Direnv
+eval "$(direnv hook zsh)"
+
 # Rbenv
 export PATH="$PATH:$HOME/.rbenv/shims:$HOME/.rvm/bin"
 
