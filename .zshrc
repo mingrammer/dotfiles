@@ -8,7 +8,7 @@ export PATH=/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/bin
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Basic configuration
-export EDITOR="/usr/bin/vim"
+export EDITOR="/usr/local/bin/vim"
 
 ## Locale
 export LC_ALL=ko_KR.UTF-8
