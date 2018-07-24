@@ -136,6 +136,10 @@ alias ogh="open https:/github.com"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# PHP7
+export PATH="/usr/local/opt/php@7.0/sbin:$PATH"
+export PATH="/usr/local/opt/php@7.0/bin:$PATH"
+
 # Github token
 GITHUB_TOKEN=
 
