@@ -131,6 +131,7 @@ alias awesome="awesome-hub"
 alias ofb="open https://facebook.com"
 alias ogg="open https://google.com"
 alias ogh="open https:/github.com"
+alias vi="vim"
 
 # Go
 export GOPATH=$HOME/go
