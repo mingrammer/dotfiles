@@ -110,6 +110,7 @@ brew "wget"
 brew "wiggle"
 brew "zsh"
 brew "knqyf263/pet/pet"
+brew "exa"
 
 cask "cuda"
 cask "haskell-platform"
