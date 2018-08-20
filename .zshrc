@@ -132,6 +132,7 @@ alias ofb="open https://facebook.com"
 alias ogg="open https://google.com"
 alias ogh="open https:/github.com"
 alias vi="vim"
+alias exa="exa --header --long --git"
 
 # Go
 export GOPATH=$HOME/go
