@@ -31,6 +31,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 ## ZSH plugins
 plugins=(git zsh-syntax-highlighting)
 
+## ZSH autocompletions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 ## ZSH theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
