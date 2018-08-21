@@ -112,6 +112,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 brew "knqyf263/pet/pet"
 brew "exa"
+brew "htop"
 
 cask "cuda"
 cask "haskell-platform"
