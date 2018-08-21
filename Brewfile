@@ -109,6 +109,7 @@ brew "vim"
 brew "wget"
 brew "wiggle"
 brew "zsh"
+brew "zsh-autosuggestions"
 brew "knqyf263/pet/pet"
 brew "exa"
 
