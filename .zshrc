@@ -141,6 +141,7 @@ alias ls="exa"
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export GO111MODULE=on
 
 # PHP7
 export PATH="/usr/local/opt/php@7.0/sbin:$PATH"
