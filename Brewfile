@@ -114,6 +114,8 @@ brew "knqyf263/pet/pet"
 brew "exa"
 brew "htop"
 brew "bat"
+brew "jq"
+brew "rs/tap/jplot"
 
 cask "cuda"
 cask "haskell-platform"
