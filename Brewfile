@@ -11,8 +11,8 @@ tap "homebrew/services"
 tap "homebrew/x11"
 
 tap "knqyf263/pet"
-
 tap "pivotal/tap"
+tap "jesseduffield/lazygit"
 
 cask_args appdir: "/Applications"
 
@@ -116,6 +116,7 @@ brew "htop"
 brew "bat"
 brew "jq"
 brew "rs/tap/jplot"
+brew "lazygit"
 
 cask "cuda"
 cask "haskell-platform"
