@@ -137,6 +137,7 @@ alias ogh="open https:/github.com"
 alias vi="vim"
 alias exa="exa --header --long --git"
 alias ls="exa"
+alias lg="lazygit"
 
 # Go
 export GOPATH=$HOME/go
