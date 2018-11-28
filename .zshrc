@@ -142,7 +142,10 @@ alias lg="lazygit"
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export GO111MODULE=on
+export GO111MODULE=auto
+
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
 
 # PHP7
 export PATH="/usr/local/opt/php@7.0/sbin:$PATH"
