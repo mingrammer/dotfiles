@@ -118,6 +118,7 @@ brew "bat"
 brew "jq"
 brew "rs/tap/jplot"
 brew "lazygit"
+brew "textql"
 
 cask "cuda"
 cask "haskell-platform"
