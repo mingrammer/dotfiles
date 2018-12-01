@@ -164,9 +164,6 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# Autoenv
-source /usr/local/opt/autoenv/activate.sh
-
 # Direnv
 eval "$(direnv hook zsh)"
 
