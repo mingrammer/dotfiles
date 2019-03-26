@@ -11,8 +11,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export EDITOR="/usr/local/bin/vim"
 
 ## Locale
-export LC_ALL=ko_KR.UTF-8
-export LANG=ko_KR.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 ## SSH
 export SSH_KEY_PATH="~/.ssh/id_rsa"
