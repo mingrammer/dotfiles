@@ -29,10 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 ## ZSH plugins
-plugins=(zsh-syntax-highlighting git docker docker-machine docker-compose)
-
-## ZSH autocompletions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+plugins=(zsh-syntax-highlighting zsh-autosuggestions git docker docker-machine docker-compose)
 
 ## ZSH theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
