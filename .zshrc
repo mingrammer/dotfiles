@@ -145,8 +145,8 @@ export GO111MODULE=auto
 export PATH=$PATH:$HOME/.cargo/bin
 
 # PHP7
-export PATH="/usr/local/opt/php@7.0/sbin:$PATH"
-export PATH="/usr/local/opt/php@7.0/bin:$PATH"
+export PATH="$PATH:/usr/local/opt/php@7.0/sbin"
+export PATH="$PATH:/usr/local/opt/php@7.0/bin"
 
 # Github token
 GITHUB_TOKEN=
