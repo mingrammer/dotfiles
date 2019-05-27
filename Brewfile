@@ -121,6 +121,7 @@ brew "rs/tap/jplot"
 brew "lazygit"
 brew "textql"
 brew "goreleaser"
+brew "slackcat"
 
 cask "cuda"
 cask "haskell-platform"
