@@ -122,6 +122,7 @@ brew "lazygit"
 brew "textql"
 brew "goreleaser"
 brew "slackcat"
+brew "tig"
 
 cask "cuda"
 cask "haskell-platform"
