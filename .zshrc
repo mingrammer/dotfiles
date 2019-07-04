@@ -161,6 +161,10 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Poetry
+export POETRY_ROOT="$HOME/.poetry"
+export PATH="$POETRY_ROOT/bin:$PATH"
+
 # Direnv
 eval "$(direnv hook zsh)"
 
