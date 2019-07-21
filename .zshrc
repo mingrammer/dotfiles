@@ -139,6 +139,7 @@ alias lg="lazygit"
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$(go env GOROOT)/misc/wasm
 export GO111MODULE=auto
 
 # Rust
