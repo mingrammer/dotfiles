@@ -124,6 +124,7 @@ brew "goreleaser"
 brew "slackcat"
 brew "tig"
 brew "hyperfine"
+brew "nmap"
 
 cask "cuda"
 cask "haskell-platform"
