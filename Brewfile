@@ -130,6 +130,8 @@ brew "kubectl"
 brew "minikube"
 brew "awscli"
 brew "hub"
+brew "netcat"
+brew "graphviz"
 
 cask "cuda"
 cask "haskell-platform"
